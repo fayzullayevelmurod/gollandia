@@ -80,6 +80,6 @@ window.intlTelInput(input2,{});
 
 let inputValue1 = document.querySelector("#requestPhone");
 let inputValue2 = document.querySelector("#requestPhone2");
-let countryCode = "+7";
+let countryCode = "+1";
 inputValue1.value = countryCode;
 inputValue2.value = countryCode;
