@@ -595,10 +595,12 @@
                                 <h3 class="form-title">СКАЧАЙТЕ ПРЕЗЕНТАЦИЮ, ПРАЙС И АКЦИОННЫЕ УЧАСТКИ НА ФЕВРАЛЬ</h3>
                                 <div class="form-groups">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Имя" required class="form-inp">
+                                        <input type="text" name="name" id="requestName" placeholder="Имя" class="form-inp form-inp1">
+                                        <div class="t-input-error">Обязательное поле</div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="tel" id="requestPhone2" class="phone">
+                                        <input type="tel" id="requestPhone2" class="form-inp form-inp2">
+                                        <div class="t-input-error">Обязательное поле</div>
                                     </div>
                                     <div class="form-group">
                                         <select>
@@ -608,7 +610,7 @@
                                             <option>Telegram</option>
                                         </select>
                                     </div>
-                                    <button class="form-sec-btn" type="submit">Получить презентацию</button>
+                                    <button class="form-sec-btn">Получить презентацию</button>
                                 </div>
                             </div>
                         </form>
@@ -726,6 +728,9 @@
 
 
 
+    <!-- Imask js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.3.0/imask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/intlTelInput.js"></script>

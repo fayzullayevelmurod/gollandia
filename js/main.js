@@ -50,8 +50,6 @@ homeVideo.addEventListener('click', function (e) {
     }
 });
 
-
-
 // House slider
 var houseSlide = new Swiper(".houseSlide", {
     spaceBetween: 30,
@@ -71,15 +69,74 @@ var houseSlide = new Swiper(".houseSlide", {
 // AOS js
 AOS.init();
 
+// Form validation
+document.querySelector('.form-sec-btn').addEventListener('click', function(event) {
+    var nameInput = document.getElementById('requestName');
+    var phoneInput = document.getElementById('requestPhone2');
+    var textErrors = document.querySelectorAll('.t-input-error'); // querySelectorAll() ishlatiladi
+
+    let hasError = false;
+
+    if (!/^[a-zA-Z]+$/.test(nameInput.value)) {
+        nameInput.classList.add('error');
+        hasError = true;
+        textErrors.forEach(function(textError) {
+            textError.classList.add('active');
+        });
+    } else {
+        nameInput.classList.remove('error');
+    }
+    
+    if (phoneInput.value.length < 7 || isNaN(parseInt(phoneInput.value))) {
+        phoneInput.classList.add('error');
+        hasError = true; // Error mavjud bo'lsa hasError ni true qilamiz
+        textErrors.forEach(function(textError) {
+            textError.classList.add('active');
+        });
+    } else {
+        phoneInput.classList.remove('error');
+    }
+
+    if (hasError) {
+        event.preventDefault(); 
+        setTimeout(function() {
+            textErrors.forEach(function(textError) {
+                textError.classList.remove('active');
+            });
+        }, 5000); // 10 sekunddan keyin .active olib tashlash
+    }
+});
+
+
+
 
 // Input number
 let input = document.querySelector("#requestPhone");
 let input2 = document.querySelector("#requestPhone2");
-window.intlTelInput(input,{});
-window.intlTelInput(input2,{});
+window.intlTelInput(input, {});
+window.intlTelInput(input2, {});
 
 let inputValue1 = document.querySelector("#requestPhone");
 let inputValue2 = document.querySelector("#requestPhone2");
 let countryCode = "+1";
 inputValue1.value = countryCode;
 inputValue2.value = countryCode;
+
+// Input mask
+document.addEventListener('DOMContentLoaded', function () {
+    applyMask('requestPhone', '+0 (000) 000-00-00');
+    applyMask('requestPhone2', '+0 (000) 000-00-00');
+});
+
+function applyMask(elementId, mask) {
+    let element = document.getElementById(elementId);
+    let maskOptions = {
+        mask: mask,
+        lazy: false
+    };
+
+    element.addEventListener('focus', function () {
+        new IMask(element, maskOptions);
+    });
+}
+
