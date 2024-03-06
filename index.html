@@ -10,6 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- intlTelInput css -->
+    <link rel="stylesheet" href="css/intlTelInput.css">
     <!-- Font -->
     <link rel="stylesheet" type="text/css" href="font/TildaSans/stylesheet.css" media="screen">
 </head>
@@ -18,7 +22,7 @@
     <div class="wrapper">
 
         <!-- Header start -->
-        <header class="header">
+        <header class="header" data-aos="fade-down" data-aos-delay="100">
             <div class="container-fluid">
                 <div class="header-navs">
                     <a href="#!" class="logo"><img src="images/logo.svg" alt=""></a>
@@ -67,8 +71,8 @@
             <section class="home">
                 <div class="container-fluid">
                     <div class="home-content">
-                        <h1 class="home-title">Коттеджный посёлок бизнес-класса Голландия</h1>
-                        <div class="home-info">
+                        <h1 class="home-title" data-aos="fade-right" data-aos-delay="400">Коттеджный посёлок бизнес-класса Голландия</h1>
+                        <div class="home-info" data-aos="fade-up" data-aos-delay="600">
                             <div class="home-links">
                                 <a href="#!" class="home-link">Подобрать дом</a>
                                 <a href="#!" class="home-link-modal"><img src="images/icon/play-button-svg.svg" alt=""></a>
@@ -92,14 +96,14 @@
             <!-- Project start -->
             <section class="project">
                 <div class="container-fluid">
-                    <h1 class="project-title">О проекте</h1>
+                    <h1 class="project-title" data-aos="fade-up" data-aos-delay="400">О проекте</h1>
                     <div class="project-content">
-                        <div class="project-info">
+                        <div class="project-info" data-aos="fade-up" data-aos-delay="500">
                             <p class="project-text">Коттеджный поселок «Голландия» - один из самых престижных поселков VIP-класса под Екатеринбургом, общей площадью 50 Га. Расположен недалеко от деревни Токарево, в одном из самых красивых и экологически благополучных мест. Со всех сторон поселок окружает хвойный лес, с прогулочной лесопарковой зоной площадью 10 Га, а на территории самого поселка имеются места для прогулки и отдыха.</p>
                             <a href="#!" class="project-map-img"><img src="images/project-map.png" alt=""></a>
                         </div>
                         <div class="project-items">
-                            <div class="project-item project-item1">
+                            <div class="project-item project-item1" data-aos="fade-up" data-aos-delay="500">
                                 <div class="project-item-num">
                                     <span>от</span>
                                     <b>16.2</b>
@@ -107,7 +111,7 @@
                                 </div>
                                 <p class="project-item-text">стоимость дома с готовой внутренней отделкой, парковочным местом и земельным участком от 4 до 5 соток</p>
                             </div>
-                            <div class="project-item project-item2">
+                            <div class="project-item project-item2" data-aos="fade-left" data-aos-delay="500">
                                 <div class="project-item-box1">
                                     <img src="images/icon/gift-img.svg" alt="">
                                     <span>ЧИСТОВАЯ ОТДЕЛКА В ПОДАРОК</span>
@@ -147,32 +151,32 @@
                 <div class="container-fluid">
                     <div class="about-cards">
                         <div class="about-card">
-                            <img src="images/about-img1.jpg" alt="" class="about-card-img">
-                            <div class="about-card__info">
+                            <img src="images/about-img1.jpg" alt="" class="about-card-img" data-aos="fade-right" data-aos-delay="400">
+                            <div class="about-card__info" data-aos="fade-up" data-aos-delay="400">
                                 <h1 class="about-card-title">Единая концепция</h1>
                                 <p class="about-card-text">Поселок построен в едином архитектурном стиле нео-райт. Ведущие архитекторы создали проекты с учетом всех современных технологий, функциональности и эргономичности. Поселок идеально вписан в природное окружение.</p>
                             </div>
                         </div>
                         <div class="about-card">
-                            <div class="about-card__info">
+                            <div class="about-card__info" data-aos="fade-up" data-aos-delay="400">
                                 <h1 class="about-card-title">Ландшафтное многообразие</h1>
                                 <p class="about-card-text">Кристально чистый воздух, живописные виды и уникальное ландшафтное озеро, в котором можно поймать форель и осетра. Посёлок окружён смешанным лесом, что создаёт неповторимую атмосферу спокойствия и умиротворения.</p>
                             </div>
-                            <img src="images/about-img2.png" alt="" class="about-card-img">
+                            <img src="images/about-img2.png" alt="" class="about-card-img"  class="about-card-img" data-aos="fade-left" data-aos-delay="400">
                         </div>
                         <div class="about-card">
-                            <img src="images/about-img3.jpg" alt="" class="about-card-img">
-                            <div class="about-card__info">
+                            <img src="images/about-img3.jpg" alt="" class="about-card-img"  class="about-card-img" data-aos="fade-right" data-aos-delay="400">
+                            <div class="about-card__info" data-aos="fade-up" data-aos-delay="400">
                                 <h1 class="about-card-title">Пространство релакса</h1>
                                 <p class="about-card-text">На территории расположены различные зоны для полноценного и разнообразного отдыха: лесные тропы, уютные беседки на лоне природы. Ресторан с блюдами русской и европейской кухни, кофейня, гриль-патио и игровые площадки для детей.</p>
                             </div>
                         </div>
                         <div class="about-card">
-                            <div class="about-card__info">
+                            <div class="about-card__info" data-aos="fade-up" data-aos-delay="400">
                                 <h1 class="about-card-title">Удобное расположение</h1>
                                 <p class="about-card-text">Поселок находится всего в 40 минутах езды от центра Екатеринбурга. Асфальтовое покрытие дороги шириной 6 метров обеспечивают комфорт передвижения в любое время года.</p>
                             </div>
-                            <img src="images/about-img4.jpg" alt="" class="about-card-img">
+                            <img src="images/about-img4.jpg" alt="" class="about-card-img"  class="about-card-img" data-aos="fade-left" data-aos-delay="400">
                         </div>
                     </div>
                 </div>
@@ -183,9 +187,9 @@
             <section class="general">
                 <div class="general-content">
                     <div class="general-info">
-                        <h1 class="general-title">Генеральный план</h1>
-                        <p class="general-text">Ознакомьтесь с генпланом посёлка и выберите идеальный именно для Вас участок</p>
-                        <div class="general-links">
+                        <h1 class="general-title" data-aos="fade-right" data-aos-delay="300">Генеральный план</h1>
+                        <p class="general-text" data-aos="fade-right" data-aos-delay="300">Ознакомьтесь с генпланом посёлка и выберите идеальный именно для Вас участок</p>
+                        <div class="general-links" data-aos="fade-up" data-aos-delay="400">
                             <a href="#!" class="general-link">Открыть генплан</a>
                             <a href="#!" class="general-link">Получить на WhatsApp</a>
                         </div>
@@ -231,22 +235,22 @@
                                             <div class="house-card__content">
                                                 <div class="house-card__content-box">
                                                     <span>Общая площадь</span>
-                                                    <div class="house-dote-line">......................</div>
+                                                    <div class="house-dote-line">........................</div>
                                                     <span>134,82 м <b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Внутренняя площадь</span>
-                                                    <div class="house-dote-line">.............</div>
+                                                    <div class="house-dote-line">...................</div>
                                                     <span>106,8 м<b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Терраса</span>
-                                                    <div class="house-dote-line">....................................</div>
+                                                    <div class="house-dote-line">.......................................</div>
                                                     <span>28,02 м <b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Спальни</span>
-                                                    <div class="house-dote-line">.................................................</div>
+                                                    <div class="house-dote-line">..................................................</div>
                                                     <span>3</span>
                                                 </div>
                                                 <div class="house-card__content-box">
@@ -319,22 +323,22 @@
                                             <div class="house-card__content">
                                                 <div class="house-card__content-box">
                                                     <span>Общая площадь</span>
-                                                    <div class="house-dote-line">......................</div>
+                                                    <div class="house-dote-line">.........................</div>
                                                     <span>216,24 м <b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Внутренняя площадь</span>
-                                                    <div class="house-dote-line">.............</div>
+                                                    <div class="house-dote-line">.......................</div>
                                                     <span>166,7 <b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Терраса</span>
-                                                    <div class="house-dote-line">....................................</div>
+                                                    <div class="house-dote-line">......................................</div>
                                                     <span>37,22 м2<b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Спальни</span>
-                                                    <div class="house-dote-line">.................................................</div>
+                                                    <div class="house-dote-line">..................................................</div>
                                                     <span>3</span>
                                                 </div>
                                                 <div class="house-card__content-box">
@@ -441,22 +445,22 @@
                                             <div class="house-card__content">
                                                 <div class="house-card__content-box">
                                                     <span>Общая площадь</span>
-                                                    <div class="house-dote-line">......................</div>
+                                                    <div class="house-dote-line">.........................</div>
                                                     <span>180,66 м<b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Внутренняя площадь</span>
-                                                    <div class="house-dote-line">.............</div>
+                                                    <div class="house-dote-line">.................</div>
                                                     <span>142,85 м<b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Терраса</span>
-                                                    <div class="house-dote-line">....................................</div>
+                                                    <div class="house-dote-line">........................................</div>
                                                     <span>37,81 м <b>2</b></span>
                                                 </div>
                                                 <div class="house-card__content-box">
                                                     <span>Комнаты</span>
-                                                    <div class="house-dote-line">.................................................</div>
+                                                    <div class="house-dote-line">..................................................</div>
                                                     <span>2</span>
                                                 </div>
                                                 <div class="house-card__content-box">
@@ -544,28 +548,28 @@
                 <div class="container-fluid">
                     <h1 class="purchase-title">Способы покупки</h1>
                     <div class="purchase-cards">
-                        <div class="purchase-card">
+                        <div class="purchase-card" data-aos="fade-up" data-aos-delay="300">
                             <img src="images/purchase-card-img1.svg" alt="">
                             <div class="purchase-card-info">
                                 <h2 class="purchase-card-title">Беспроцентная рассрочк﻿а</h2>
                                 <p class="purchase-card-text">от нашей компании, без банков и проверки кредитных историй</p>
                             </div>
                         </div>
-                        <div class="purchase-card">
+                        <div class="purchase-card" data-aos="fade-up" data-aos-delay="450">
                             <img src="images/purchase-card-img2.svg" alt="">
                             <div class="purchase-card-info">
                                 <h2 class="purchase-card-title">Ипотека от 3%</h2>
                                 <p class="purchase-card-text">с гос. поддержкой, семейная, с отсутствием первоначального взноса</p>
                             </div>
                         </div>
-                        <div class="purchase-card">
+                        <div class="purchase-card" data-aos="fade-up" data-aos-delay="550">
                             <img src="images/purchase-card-img3.svg" alt="">
                             <div class="purchase-card-info">
                                 <h2 class="purchase-card-title">Жилищные сертификаты</h2>
                                 <p class="purchase-card-text">и др. государственные субсидии на приобретение дома</p>
                             </div>
                         </div>
-                        <div class="purchase-card">
+                        <div class="purchase-card" data-aos="fade-up" data-aos-delay="650">
                             <img src="images/purchase-card-img4.svg" alt="">
                             <div class="purchase-card-info">
                                 <h2 class="purchase-card-title">Наличные</h2>
@@ -594,7 +598,7 @@
                                         <input type="text" name="name" placeholder="Имя" required class="form-inp">
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" name="formPhone" value=""  class="phone" placeholder="+7 (999) 999-99-99">
+                                        <input type="tel" id="requestPhone2" class="phone">
                                     </div>
                                     <div class="form-group">
                                         <select>
@@ -622,10 +626,10 @@
                     <div class="developer-content">
                         <h1 class="developer-title">О застройщике</h1>
                         <div class="developer-texts">
-                            <p class="developer-text">CONCEPT⁵ – компания, которая уже много лет возводит дома, исполняя мечты клиентов и сочетая современные технологии с мастерством опытных строителей.</p>
-                            <p class="developer-text">Уже более 10 лет успешно реализуем разнообразные проекты на рынке загородной недвижимости. Частное домостроение, коммерческие и социально-значимые объекты. Мы предлагаем решения под любые задачи и предоставляем высококачественные услуги по всей строительной цепочке: начиная от проектирования, заканчивая меблировкой.</p>
+                            <p class="developer-text" data-aos="fade-up" data-aos-delay="300">CONCEPT⁵ – компания, которая уже много лет возводит дома, исполняя мечты клиентов и сочетая современные технологии с мастерством опытных строителей.</p>
+                            <p class="developer-text" data-aos="fade-up" data-aos-delay="450">Уже более 10 лет успешно реализуем разнообразные проекты на рынке загородной недвижимости. Частное домостроение, коммерческие и социально-значимые объекты. Мы предлагаем решения под любые задачи и предоставляем высококачественные услуги по всей строительной цепочке: начиная от проектирования, заканчивая меблировкой.</p>
                         </div>
-                        <div class="developer-boxs">
+                        <div class="developer-boxs" data-aos="fade-up" data-aos-delay="550">
                             <div class="developer-box">
                                 <span>Застроено м2</span>
                                 <b>300 000</b>
@@ -655,7 +659,7 @@
                         <div class="request-form-wrap">
                             <h1 class="request-title">ОСТАВЬТЕ ЗАЯВКУ И МЫ ОТВЕТИМ НА ВАШИ ВОПРОСЫ</h1>
                             <div class="request-form">
-                                <input type="number" placeholder="+7 (999) 999-99-99" class="request-form-inp">
+                                <input type="tel" placeholder="" id="requestPhone" class="request-form-inp">
                                 <button type="submit" class="request-form-btn">Оставить заявку</button>
                             </div>
                             <p class="request-form-text">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
@@ -723,6 +727,8 @@
 
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/intlTelInput.js"></script>
     <script src="js/main.js"></script>
 
 </body>

@@ -1,4 +1,3 @@
-
 // Header scroll
 window.addEventListener('scroll', function () {
     let header = document.querySelector('.header');
@@ -17,13 +16,13 @@ let headerMobBg = document.querySelector('.header-mob-bg');
 let menuOpen = document.querySelector('.menu-open');
 let menuClose = document.querySelector('.menu-close');
 
-menuOpen.addEventListener('click', function(e) {
+menuOpen.addEventListener('click', function (e) {
     headerMob.classList.add('active');
 });
-menuClose.addEventListener('click', function(e) {
+menuClose.addEventListener('click', function (e) {
     headerMob.classList.remove('active');
 });
-headerMobBg.addEventListener('click', function(e) {
+headerMobBg.addEventListener('click', function (e) {
     headerMob.classList.remove('active');
 });
 
@@ -69,5 +68,18 @@ var houseSlide = new Swiper(".houseSlide", {
 });
 
 
+// AOS js
+AOS.init();
 
-// Form phone
+
+// Input number
+let input = document.querySelector("#requestPhone");
+let input2 = document.querySelector("#requestPhone2");
+window.intlTelInput(input,{});
+window.intlTelInput(input2,{});
+
+let inputValue1 = document.querySelector("#requestPhone");
+let inputValue2 = document.querySelector("#requestPhone2");
+let countryCode = "+7";
+inputValue1.value = countryCode;
+inputValue2.value = countryCode;
