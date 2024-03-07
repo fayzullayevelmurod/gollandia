@@ -998,8 +998,9 @@ input::-webkit-inner-spin-button {
 }
 .form-wrap .form-group{
     width: 100%;
+    position: relative;
 }
-.form-wrap .form-group input,
+.form-wrap .form-group .form-inp,
 .form-wrap .form-group select{
     width: 100%;
     color: #000000;
@@ -1012,9 +1013,52 @@ input::-webkit-inner-spin-button {
     padding: 0 20px;
     outline: none;
 }
+.form-wrap .form-group .form-inp:nth-child(2){
+    padding-left: 55px;
+}
+.form-wrap .form-group .form-inp.error{
+    border-color: red;
+}
+.form-wrap .form-group .t-input-error{
+    display: none;
+    position: absolute;
+    color: red;
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    z-index: 1;
+    margin-top: 5px;
+    left: 0;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.2);
+}
+.form-wrap .form-group .t-input-error.active{
+    display: block;
+}
+.form-wrap .form-group .t-input-error::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -12px;
+    left: 15%;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+
 .form-wrap .form-group select{
     padding: 0 15px;
     cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    background-image: url("../images/icon/arrow_icon.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: 50%;
 }
 .form-groups .form-sec-btn{
     color: #544739;

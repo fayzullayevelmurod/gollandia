@@ -590,15 +590,17 @@
                             <img src="images/form-img2.png" alt="" class="form-img2">
                         </div>
 
-                        <form>
+                        <form action="#">
                             <div class="form-wrap">
                                 <h3 class="form-title">СКАЧАЙТЕ ПРЕЗЕНТАЦИЮ, ПРАЙС И АКЦИОННЫЕ УЧАСТКИ НА ФЕВРАЛЬ</h3>
                                 <div class="form-groups">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Имя" required class="form-inp">
+                                        <input type="text" name="name" id="requestName" placeholder="Имя" class="form-inp form-inp1">
+                                        <div class="t-input-error">Обязательное поле</div>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="tel" id="requestPhone2" class="phone">
+                                    <div class="form-group input_phone__wrap">
+                                        <input type="tel" id="requestPhone2" class="form-inp form-inp2">
+                                        <div class="t-input-error">Обязательное поле</div>
                                     </div>
                                     <div class="form-group">
                                         <select>
@@ -608,7 +610,7 @@
                                             <option>Telegram</option>
                                         </select>
                                     </div>
-                                    <button class="form-sec-btn" type="submit">Получить презентацию</button>
+                                    <button type="submit" class="form-sec-btn">Получить презентацию</button>
                                 </div>
                             </div>
                         </form>
@@ -658,10 +660,10 @@
                     <div class="request-content">
                         <div class="request-form-wrap">
                             <h1 class="request-title">ОСТАВЬТЕ ЗАЯВКУ И МЫ ОТВЕТИМ НА ВАШИ ВОПРОСЫ</h1>
-                            <div class="request-form">
+                            <form action="#" class="request-form input_phone__wrap">
                                 <input type="tel" placeholder="" id="requestPhone" class="request-form-inp">
                                 <button type="submit" class="request-form-btn">Оставить заявку</button>
-                            </div>
+                            </form>
                             <p class="request-form-text">Нажимая кнопку «Отправить» вы подтверждаете свое согласие на обработку персональных данных</p>
                         </div>
                         <div class="request-slider-items">
@@ -712,6 +714,7 @@
         </footer>
         <!-- Footer end -->
 
+
     </div>
 
     <!-- Home youtube video -->
@@ -726,6 +729,9 @@
 
 
 
+    <!-- Imask js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/intlTelInput.js"></script>
